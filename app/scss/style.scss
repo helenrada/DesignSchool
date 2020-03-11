@@ -38,6 +38,51 @@
     margin-left: 26px;
   }
 }
+.menu-indicator {
+  position: fixed;
+  right: 8px;
+  top: 50%;
+  z-index: 1;
+  li {
+    position: relative;
+    &::after {
+      position: absolute;
+      right: 30px;
+      content: "";
+      background-color: #52e8b3;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      top: 8px;
+    }
+    a {
+      line-height: 24px;
+      font-weight: 500;
+      color: #505050;
+      font-size: 0px;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 72px;
+    }
+  }
+  li:hover,
+  .menu-indicator.active-section {
+    position: relative;
+    &::after {
+      right: 48px;
+      content: "";
+      background-image: url(../images/menu-ind.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 13px;
+      height: 12px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+}
 // end header
 
 // start skills
@@ -79,6 +124,7 @@
     color: #fff;
     text-transform: uppercase;
     outline: none;
+    border: none;
   }
   img {
     position: absolute;
@@ -214,7 +260,8 @@
   padding: 0 125px;
   position: relative;
 }
-.testimonials__slider-item {
+
+.item_inner {
   display: flex;
   justify-content: space-between;
 }
@@ -227,6 +274,10 @@
   width: 169px;
   height: 162px;
   margin-right: 35px;
+}
+.thumbs-item img {
+  width: 40px;
+  height: 40px;
 }
 
 // end testimonials
