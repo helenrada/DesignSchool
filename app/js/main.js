@@ -7,12 +7,26 @@ $(function() {
     appendArrows: ".arrows-dots"
   });
 
-  $(".question").on("click", function() {
-    $(this).toggleClass("active");
-    $(".answer").toggleClass("active");
-  });
-  $(".question.active").on("click", function() {
-    $(this).removeClass("active");
+  // $(".question").on("click", function() {
+  //   $(this).toggleClass("active");
+  //   $(".answer").toggleClass("active");
+  // });
+  // $(".question.active").on("click", function() {
+  //   $(this).removeClass("active");
+  // });
+  $(".question").click(function(event) {
+    if ($(".questions-answer__inner").hasClass("one")) {
+      $(".question")
+        .not($(this))
+        .removeClass("active");
+      $(".answer")
+        .not($(this).next())
+        .slideUp(300);
+    }
+    $(this)
+      .toggleClass("active")
+      .next()
+      .slideToggle(300);
   });
 
   $(".testimonials__slider-for").slick({
@@ -64,7 +78,9 @@ $(function() {
   //     },
   //     800
   //   );
-  // }
+  $(".menu-btn").on("click", function() {
+    $(".menu ul").slideToggle();
+  });
 
   var mixer = mixitup(".homework__inner");
 });
