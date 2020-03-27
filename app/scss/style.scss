@@ -257,7 +257,7 @@
 .our-courses__img img {
   max-width: 496px;
   width: 100%;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 }
 .our-courses__info {
   max-width: 496px;
@@ -523,21 +523,25 @@
 
 .footer__inner {
   background-color: rgba(145, 137, 241, 0.9);
-  padding-top: 57px;
-  padding-bottom: 72px;
+  padding-bottom: 70px;
 }
 .footer-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #fff;
   font-size: 12px;
-  margin-bottom: 65px;
+  padding: 32px 164px 53px;
 }
+.col-logo {
+  min-width: 200px;
+  margin-right: 46px;
+}
+
 .footer-box__col {
   max-width: 167px;
   width: 100%;
   ul {
-    padding-top: 58px;
+    padding-top: 50px;
   }
   a {
     color: #fff;
@@ -546,7 +550,6 @@
 
 .menu-footer {
   text-align: center;
-  margin-bottom: 72px;
   li a {
     color: #fff;
     &:hover {
@@ -560,7 +563,7 @@
   color: #505050;
   text-align: center;
   background-color: #fff;
-  margin: 8px auto;
+  margin: 3px auto;
 }
 // end footer
 
