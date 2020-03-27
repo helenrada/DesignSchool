@@ -94,11 +94,29 @@
   .question {
     margin-left: 20px;
     font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .box__btn {
+    margin-top: 30px;
   }
 
   .answer {
     margin-left: 35px;
     font-size: 14px;
+  }
+  .message__form input {
+    padding-right: 26px;
+  }
+
+  .message__form button {
+    display: block;
+    position: relative;
+    top: 10px;
+  }
+  .message__form img {
+    position: absolute;
+    right: 207px;
+    top: 60px;
   }
   .footer__inner {
     padding-bottom: 0;
