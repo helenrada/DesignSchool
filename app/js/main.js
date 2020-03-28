@@ -7,13 +7,6 @@ $(function() {
     appendArrows: ".arrows-dots"
   });
 
-  // $(".question").on("click", function() {
-  //   $(this).toggleClass("active");
-  //   $(".answer").toggleClass("active");
-  // });
-  // $(".question.active").on("click", function() {
-  //   $(this).removeClass("active");
-  // });
   $(".question").click(function(event) {
     if ($(".questions-answer__inner").hasClass("one")) {
       $(".question")

@@ -142,10 +142,6 @@
     text-transform: uppercase;
     outline: none;
     border: none;
-    // border: 2px solid #6c63e8;
-    // box-sizing: border-box;
-    // border-radius: 8px;
-    // transform: matrix(-1, 0, 0, 1, 0, 0);
     &::after {
       content: "";
       background-image: url("../images/btn-border.png");
@@ -157,11 +153,6 @@
       left: -10px;
     }
   }
-  // img {
-  //   position: absolute;
-  //   top: -5px;
-  //   left: -8px;
-  // }
 }
 .skills__inner-row__slider {
   max-width: 484px;
@@ -276,10 +267,12 @@
 .our-courses__info {
   max-width: 496px;
   width: 100%;
-  height: 209px;
+  min-height: 209px;
   position: absolute;
-  top: 323px;
-  padding-right: 29px;
+  bottom: 16px;
+}
+.our-courses__link a {
+  cursor: pointer;
 }
 // end our-courses
 
@@ -506,11 +499,6 @@
       left: -10px;
     }
   }
-  // img {
-  //   position: absolute;
-  //   right: -9px;
-  //   top: -6px;
-  // }
 }
 
 .social {
@@ -544,9 +532,10 @@
 }
 // end message
 // start footer
-
-.footer__inner {
+.footer {
   background-color: rgba(145, 137, 241, 0.9);
+}
+.footer__inner {
   padding-bottom: 70px;
 }
 .footer-box {
