@@ -1,6 +1,7 @@
 @media (max-width: 1120px) {
   .skills__inner {
     padding-left: 0;
+    padding-right: 0;
   }
   .title {
     font-size: 34px;
@@ -16,9 +17,17 @@
     margin-bottom: 15px;
   }
 }
+
+@media (max-width: 950px) {
+  .slider {
+    margin-left: 33px;
+  }
+}
+
 @media (max-width: 890px) {
   .skills__inner {
     flex-wrap: wrap;
+    padding-top: 0;
   }
   .skills__descr-title {
     max-width: 870px;
@@ -30,6 +39,9 @@
   }
   .skills__descr {
     max-width: none;
+  }
+  .slider {
+    margin-top: 60px;
   }
   .our-courses {
     padding: 0;
@@ -55,6 +67,13 @@
     margin-bottom: 8px;
   }
 }
+
+@media (max-width: 950px) {
+  .slider {
+    margin-left: 33px;
+  }
+}
+
 @media (max-width: 700px) {
   .menu-btn {
     display: block;
@@ -148,6 +167,34 @@
     margin-bottom: 5px;
   }
 }
+
+@media (max-width: 490px) {
+  .skills__inner {
+    margin-left: -36px;
+  }
+  .slick-prev.slick-arrow {
+    bottom: auto;
+    left: auto;
+    right: 87px;
+    top: -31px;
+    transform: rotate(-90deg);
+  }
+  .slick-next.slick-arrow {
+    bottom: auto;
+    left: auto;
+    top: -31px;
+    right: 0;
+    transform: rotate(-90deg);
+  }
+  .slick-dots {
+    bottom: auto;
+    left: auto;
+    top: -43px;
+    right: 44px;
+    transform: rotate(-90deg);
+  }
+}
+
 @media (max-width: 440px) {
   .info {
     padding-left: 10px;
@@ -163,7 +210,7 @@
     font-size: 25px;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 701px) {
   .menu ul {
     display: block !important;
   }

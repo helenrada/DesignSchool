@@ -1,25 +1,16 @@
-$(function() {
+$(function () {
   $(".skills__slider").slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    appendDots: ".arrows-dots",
-    appendArrows: ".arrows-dots"
   });
 
-  $(".question").click(function(event) {
+  $(".question").click(function (event) {
     if ($(".questions-answer__inner").hasClass("one")) {
-      $(".question")
-        .not($(this))
-        .removeClass("active");
-      $(".answer")
-        .not($(this).next())
-        .slideUp(300);
+      $(".question").not($(this)).removeClass("active");
+      $(".answer").not($(this).next()).slideUp(300);
     }
-    $(this)
-      .toggleClass("active")
-      .next()
-      .slideToggle(300);
+    $(this).toggleClass("active").next().slideToggle(300);
   });
 
   $(".testimonials__slider-for").slick({
@@ -27,7 +18,7 @@ $(function() {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    asNavFor: ".testimonials__slider-nav"
+    asNavFor: ".testimonials__slider-nav",
   });
   $(".testimonials__slider-nav").slick({
     slidesToShow: 6,
@@ -35,7 +26,7 @@ $(function() {
     asNavFor: ".testimonials__slider-for",
     dots: true,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
   });
 
   // var contentSection = $(".content-section");
@@ -71,7 +62,7 @@ $(function() {
   //     },
   //     800
   //   );
-  $(".menu-btn").on("click", function() {
+  $(".menu-btn").on("click", function () {
     $(".menu ul").slideToggle();
   });
 

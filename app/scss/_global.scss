@@ -59,62 +59,6 @@ body {
   line-height: 61px;
 }
 
-.info {
-  display: block;
-  color: #fff;
-  padding-left: 32px;
-  padding-top: 24px;
-}
-.info-title {
-  @include f700;
-  font-size: 24px;
-  line-height: 24px;
-  margin-bottom: 16px;
-}
-.info-text {
-  font-size: 16px;
-  line-height: 140%;
-  margin-bottom: 11px;
-  span {
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-.status {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-left: 64px;
-  position: relative;
-  &::before {
-    content: "";
-    background-image: url(../images/icons/beginner.svg);
-    width: 24px;
-    height: 21px;
-    position: absolute;
-    left: 2px;
-    top: 17px;
-  }
-}
-.beginner::before {
-  background-image: url(../images/icons/beginner.svg);
-}
-.expert::before {
-  background-image: url(../images/icons/expert.svg);
-}
-.intermediate::before {
-  background-image: url(../images/icons/intermediate.svg);
-}
-
-.status-info {
-  font-size: 16px;
-  line-height: 140%;
-  padding-top: 10px;
-}
-.status-price {
-  @include f400;
-  font-size: 34px;
-  line-height: 33px;
-}
 @media (max-width: 720px) {
   .container-fluid {
     padding: 0 15px;
