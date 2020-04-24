@@ -16,7 +16,7 @@ $(function () {
   $(".testimonials__slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     fade: true,
     asNavFor: ".testimonials__slider-nav",
   });
@@ -65,6 +65,8 @@ $(function () {
   $(".menu-btn").on("click", function () {
     $(".menu ul").slideToggle();
   });
+
+  new WOW().init();
 
   var mixer = mixitup(".homework__inner");
 });

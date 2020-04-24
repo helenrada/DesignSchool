@@ -217,6 +217,7 @@
   color: #fff;
   padding: 288px 32px 0px 32px;
   cursor: pointer;
+  transition: all 0.3s;
   &:hover {
     padding-top: 94px;
     background: rgba(108, 99, 232, 0.5);
@@ -432,6 +433,7 @@
   max-width: 496px;
   width: 100%;
   min-height: 536px;
+  transition: all 0.3s;
   &:hover {
     padding-top: 94px;
     background: rgba(108, 99, 232, 0.5);
@@ -497,6 +499,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.testimonials__slider-nav {
+  margin-bottom: 30px;
 }
 
 // end testimonials
