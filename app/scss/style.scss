@@ -397,8 +397,7 @@
   padding-top: 104px;
   margin-bottom: 90px;
 }
-.our-courses__link {
-}
+
 .our-courses__title {
   margin-bottom: 56px;
 }
@@ -415,7 +414,9 @@
   max-width: 496px;
   width: 100%;
   min-height: 536px;
+  margin-bottom: 30px;
 }
+
 .our-courses__info {
   .btn-info a {
     &::after {
@@ -502,6 +503,7 @@
 }
 .testimonials__slider-nav {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 // end testimonials
@@ -531,6 +533,28 @@
     margin-left: 8px;
   }
 }
+.all {
+  display: flex;
+  justify-content: center;
+  padding-right: 38px;
+  max-width: 182px;
+  margin: 0 auto;
+  padding-right: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  color: #6c63e8;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url(../images/icons/arrow.svg);
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 0;
+  }
+}
 .homework__inner-items {
   display: flex;
   justify-content: space-between;
@@ -549,7 +573,7 @@
   text-transform: uppercase;
   font-weight: 500;
   font-size: 18px;
-  color: #6c63e8;
+
   border: none;
   margin-right: 24px;
   background-color: #fff;
@@ -558,6 +582,7 @@
   a {
     position: relative;
     padding-right: 20px;
+    color: #6c63e8;
   }
   &::after {
     content: "";
@@ -686,6 +711,8 @@
     position: absolute;
     right: 0px;
     bottom: 0px;
+    cursor: pointer;
+    outline: none;
     &::after {
       content: "";
       background-image: url("../images/btn-border.png");
