@@ -106,6 +106,9 @@
   .menu__list li + li {
     margin-left: 0;
   }
+  .item_inner {
+    flex-wrap: wrap;
+  }
   .our-courses__title {
     margin-bottom: 27px;
   }
@@ -212,6 +215,11 @@
   }
   .status-price {
     font-size: 25px;
+  }
+  .testimonials__slider-nav {
+    .slick-list {
+      padding: 0px !important;
+    }
   }
 }
 @media (min-width: 701px) {
