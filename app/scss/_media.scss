@@ -39,6 +39,7 @@
   }
   .skills__descr {
     max-width: none;
+    padding-left: 40px;
   }
   .slider {
     margin-top: 60px;
@@ -53,7 +54,6 @@
   }
   .col-logo {
     min-width: 100%;
-    // margin-bottom: -20px;
     margin-right: 0;
   }
   .footer-box__col ul {
@@ -190,15 +190,11 @@
     bottom: auto;
     left: auto;
     top: -31px;
-    right: 0;
+    right: 30px;
     transform: rotate(-90deg);
   }
   .slick-dots {
-    bottom: auto;
-    left: auto;
-    top: -43px;
-    right: 44px;
-    transform: rotate(-90deg);
+    display: none;
   }
 }
 
