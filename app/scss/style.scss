@@ -300,6 +300,7 @@
 .status {
   font-size: 16px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -407,8 +408,9 @@
   flex-wrap: wrap;
 }
 .our-courses__item {
+  background-image: url(../images/content/course-1.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  // background-position: center;
   background-size: cover;
   position: relative;
   max-width: 496px;
@@ -428,9 +430,9 @@
 .our-courses__info {
   padding: 327px 32px 28px;
   color: #fff;
-  position: absolute;
-  bottom: 9px;
-  left: 3px;
+  // position: absolute;
+  // bottom: 9px;
+  // left: 3px;
   max-width: 496px;
   width: 100%;
   min-height: 536px;
